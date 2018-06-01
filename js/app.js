@@ -5,9 +5,6 @@ $(document).ready(function(){
   var $grid = $('td'); // links to every square
   var $reset = $('#reset');
 
-  var xArr = [];
-  var oArr = [];
-
   var $turnTxt = $('.playerTurn');
 
   $('td').click(function(){
@@ -76,8 +73,6 @@ $(document).ready(function(){
     $grid.removeClass('X');
     $grid.removeClass('O');
     turnVal = 1;
-    xArr = [];
-    oArr = [];
     console.log(`SQUARES RESET. Turn Counter Value is ${turnVal}`);
     console.log('Reset Clicked');
   }); // reset button function --------------------------- end
